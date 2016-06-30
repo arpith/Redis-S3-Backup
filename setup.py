@@ -8,4 +8,7 @@ setup(name='redis_s3_backup',
         author_email='arpith@feedreader.co',
         license='MIT',
         packages=['redis_s3_backup'],
+        install_requires=[
+            'boto3',
+        ],
         zip_safe=False)
