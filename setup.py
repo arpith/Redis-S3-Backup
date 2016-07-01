@@ -11,7 +11,7 @@ setup(name='redis_s3_backup',
         install_requires=[
             'boto3',
         ],
-        entry_points:{
+        entry_points={
             'console_scripts':['redis_s3_backup=redis_s3_backup.command_line:main'],
         },
         zip_safe=False)
