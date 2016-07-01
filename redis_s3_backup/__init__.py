@@ -2,7 +2,6 @@
 
 from os import path
 from time import time
-import argparse
 import boto3
 
 REDIS_DIR = '~/redis-3.2.1'
