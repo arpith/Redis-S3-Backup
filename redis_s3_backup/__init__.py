@@ -17,5 +17,5 @@ def backup(redis_dir, bucket_name):
     boto_s3 = boto3.resource('s3')
     file_path = path.join(redis_dir, 'dump.rdb')
     rdb = open(file_path, 'r')
-    key = time() + '.rdb'
+    key = str(time()) + '.rdb'
     boto_s3.Bucket(bucket_name).put_object(Key=key, Body=rdb)
